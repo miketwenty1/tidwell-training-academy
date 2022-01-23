@@ -4,6 +4,8 @@
 - A thumbdrive you aren't using/needing to install/boot Linux.
 - Download latest Ubuntu LTS iso image file (currently version 20.04)
   - https://ubuntu.com/download (Ubuntu Desktop)
+  - NOTE if you plan on using an ARM processor download the correct iso image. 
+    - This will be for things like Raspiberry Pi's.
 - Create a bootable USB drive using the downloaded iso image.
   - There are various tutorials available online to walk you through this process of configuring a USB drive to boot Ubuntu. Below I have my suggestions.
   - Tidwell Recommendation on which software to use:
