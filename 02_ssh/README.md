@@ -6,6 +6,7 @@
 
 #### What we are doing
 <img src="https://github.com/miketwenty1/images/blob/master/diagram_local_network.png?raw=true" width="750" />
+
 - This diagram shows your linux computer will be accessed from a different computer on the same network.
 - We will be using "SSH" or secure shell to access your linux machine.
 - The reason it's "secure" is because all the network traffic will be encrypted with an "ssh key".
