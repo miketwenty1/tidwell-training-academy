@@ -1,13 +1,14 @@
-# LINUX 
+# HOME SERVER 
 #### Requirements: 
-- A laptop or desktop you aren't using/needing to load Linux onto.
+- Completed ch1.
+- Home internet connection.
+- Another computer that can access your server, ideally not a phone, but a phone can work too.
+
 - A thumbdrive you aren't using/needing to install/boot Linux.
 - Download latest Ubuntu LTS iso image file (currently version 20.04)
   - https://ubuntu.com/download (Ubuntu Desktop)
   - NOTE if you plan on using an ARM processor download the correct iso image. 
     - This will be for things like Raspberry Pi's. However, specifically if using a raspberry pi, use their supported image: https://ubuntu.com/download/raspberry-pi
-
-## steps
 1. Create a bootable USB drive using the downloaded iso image.
   - There are various tutorials available online to walk you through this process of configuring a USB drive to boot Ubuntu. Below I have my suggestions.
   - Tidwell Recommendation on which software to use:
@@ -25,7 +26,7 @@
 
 Congraulations you have used the terminal and you are running Linux on that old dusty laptop of. Come back to me for another assignment.
 
-## FAQ
+# FAQ
 - Do you need a large harddrive / HDD/SSD?
   - No, 32GB - 64GB is fine. You can always buy a larger one later if you need it and go through this process again.
 - If I want to build a raspberry pi for this assignment should what do I need to buy?
