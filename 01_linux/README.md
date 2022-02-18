@@ -7,7 +7,7 @@
   - NOTE if you plan on using an ARM processor download the correct iso image. 
     - This will be for things like Raspberry Pi's. However, specifically if using a raspberry pi, use their supported image: https://ubuntu.com/download/raspberry-pi
 
-## steps
+#### steps
 1. Create a bootable USB drive using the downloaded iso image.
   - There are various tutorials available online to walk you through this process of configuring a USB drive to boot Ubuntu. Below I have my suggestions.
   - Tidwell Recommendation on which software to use:

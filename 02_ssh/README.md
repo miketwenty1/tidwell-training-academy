@@ -1,33 +1,31 @@
-# HOME SERVER 
+# SSH 
 #### Requirements: 
 - Completed ch1.
-- Home internet connection.
-- Another computer that can access your server, ideally not a phone, but a phone can work too.
+- Computer with linux from ch1 connected to home router. We will call this computer A. (server).
+- Another computer connected to the same router/wifi/network. We will call this Computer B. (client).
 
-- A thumbdrive you aren't using/needing to install/boot Linux.
-- Download latest Ubuntu LTS iso image file (currently version 20.04)
-  - https://ubuntu.com/download (Ubuntu Desktop)
-  - NOTE if you plan on using an ARM processor download the correct iso image. 
-    - This will be for things like Raspberry Pi's. However, specifically if using a raspberry pi, use their supported image: https://ubuntu.com/download/raspberry-pi
-1. Create a bootable USB drive using the downloaded iso image.
-  - There are various tutorials available online to walk you through this process of configuring a USB drive to boot Ubuntu. Below I have my suggestions.
-  - Tidwell Recommendation on which software to use:
-    - For Mac use Etcher
-    - For Windows use Yumi
-    - For Linux use "dd" command (if you're already using Linux)
-2. Figure out how to boot up Ubuntu when you have the USB drive plugged in.
-  - Usually inolves turning on the computer and before it boots, you press a certain f-key like f9 or f11. Do some research to figure out the proper key. You may also need to to some BIOS configuration. 
-  - Depending on USB drive and Computer you may run into issues. Google Away!
-    - My favoritate reliable USB drives for this kind of stuff is SANDISK brand.
+#### What we are doing
+<img src="https://github.com/miketwenty1/images/blob/master/diagram_local_network.png?raw=true" width="750" />
+- This diagram shows your linux computer will be accessed from a different computer on the same network.
+- We will be using "SSH" or secure shell to access your linux machine.
+- The reason it's "secure" is because all the network traffic will be encrypted with an "ssh key".
+- Think of a shell as a program that helps your user expierence when you want to interact with the linux machine. From ch1 when you type in a command to the terminal you were using a shell! Now we will be using a remote computer to Tunnel into the computer to also use a terminal shell. The exact description here is a bit hand wavey.. but that's it in a nut "shell". bum bum tisk*.
+- NOTE exact instructions on how to do this are ommitted on purpose so you can learn to be self sufficient. If you end up finding guides that want you to do other things, that's fine, but also try to do things the way that they are outlined here.
 
-3. After you boot up, open up the "Terminal" then type in:
-  - `expr 1 + 1`
-  - Result should be "2" 
+#### steps
+1. Activate the standard linux open SSH server on computer A.
+2. Run `netstat -an | grep LISTEN | grep 22` Verify you see output the that represents the port is open listening. If nothing comes back, your ssh server is probably not running. (Computer A).
+3. Download an SSH client on the 2nd computer. (Computer B).
+4. Create ssh key pair and copy the public key (Computer B).
+5. Copy the public ssh key with the USB drive from Ch1 from Computer B to Computer A.
+6. We will create a file called "authorized_keys" inside the home ssh directory `touch ~/.ssh/authorized_keys`. (Computer A).
+7. Next let's drop the file from the USB anywhere on the computer. We will copy the contents of the public key and paste it into the authorized_keys file. Note, This is in a "." hidden directory so good luck figuring this out. (Computer A).
+8. On Computer B we should be able to use our SSH client to "ssh" into the Computer A. It may prop for us to accept the connection "yes" the first time we access it.
+9. While using Computer B, go to the temp folder `cd /tmp` and then make a file with the words "Hello World" `echo "Hello World" > hi.txt
+10. On Computer A, go to the temp folder and run a list command. `cd /tmp`, `ls`. You should be able to see "hi.txt". Run a concatenate command to see the contents of the file. `cat hi.txt` you should be able to see "Hello World". 
 
-Congraulations you have used the terminal and you are running Linux on that old dusty laptop of. Come back to me for another assignment.
+#### Finished
+- Congratulations you are on your way to being a shadowy super coder! You can now access your linux box from another computer, look at you go! 
 
-# FAQ
-- Do you need a large harddrive / HDD/SSD?
-  - No, 32GB - 64GB is fine. You can always buy a larger one later if you need it and go through this process again.
-- If I want to build a raspberry pi for this assignment should what do I need to buy?
-  - You will want to make sure you have periferals such as a mouse, keyboard, sd card, micro hdmi chord. Recommended to look for bundled official hardware combo kits available online.
+## FAQ
+- None yet.
