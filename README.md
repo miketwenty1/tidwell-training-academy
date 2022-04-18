@@ -1,2 +1,2 @@
 # tidwell-training-academy
-for the nubs
+for the plebs by a pleb
