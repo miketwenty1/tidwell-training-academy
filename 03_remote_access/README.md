@@ -1,4 +1,4 @@
-# SSH 
+# Remote SSH 
 #### Requirements: 
 - Running Linux ssh server from ch2.
 - External Network Access.
