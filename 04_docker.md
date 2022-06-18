@@ -6,7 +6,7 @@
 ## Steps
 1. Use SSH and get into your linux machine.
 2. Download docker.
-  - https://docker.com
+    - https://docker.com
 3. Make sure docker is running and available for usage by running `docker ps` in the terminal.
 4. Run a simple Hello World docker container.
 5. Delete that container then delete that docker image.
@@ -14,7 +14,7 @@
 7. Go to a web browser and type in `http://IP_ADDRESS:8080` where IP_ADDRESS is the localip of your linux server. Verify you can see the website.
 8. Familiarize yourself with the `docker exec -it CONTAINER_ID` syntax and go into the docker container and try to change the websites contents.
 9. Make changes to your website that persist and use `-v` volume mounts to specify a volume for data.
-  - You will need to potentially stop/start/remove containers while you test new html pages.
+    - You will need to potentially stop/start/remove containers while you test new html pages.
 
 Congraulations you have hosted a website through docker and have familiarized yourself with the basics!
 
