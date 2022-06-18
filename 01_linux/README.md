@@ -12,6 +12,7 @@
   - There are various tutorials available online to walk you through this process of configuring a USB drive to boot Ubuntu. Below I have my suggestions.
   - Tidwell Recommendation on which software to use:
     - For Mac use Etcher
+      - https://ubuntu.com/tutorials/create-a-usb-stick-on-macos#1-overview
     - For Windows use Yumi
     - For Linux use "dd" command (if you're already using Linux)
 2. Figure out how to boot up Ubuntu when you have the USB drive plugged in.
