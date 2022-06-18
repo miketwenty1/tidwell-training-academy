@@ -27,6 +27,10 @@
 
 Congraulations you have used the terminal and you are running Linux on that old dusty laptop of. Come back to me for another assignment.
 
+## Recommended Extra Credit
+- Get familiar with the linux command line. Lookup a simple tutorial to get your feet wet with the commands.
+- This is a good place to start [Ubuntu Beginners CLI Tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#8-hidden-files)
+
 ## FAQ
 - Do you need a large harddrive / HDD/SSD?
   - No, 32GB - 64GB is fine. You can always buy a larger one later if you need it and go through this process again.
